@@ -5,11 +5,11 @@
     <title> 
 	    CAT.HTML 
     </title>
-    
+     <link rel="stylesheet" href="hw.css">
 </head>
 <body>
 	<header>
-        <h1>CAT</h1>
+        <h1 class="Title">CAT</h1>
     </header>
 	<nav>
 	 	<ul>
@@ -22,20 +22,18 @@
 	<section>
 		<article>
 			<h2 id="about">About cat!</h2>
-			<p>Cat</p>
-
 			<p>The domestic cat[1][2] (Felis catus[2] or Felis silvestris catus[4]) is a small, usually furry, domesticated, and carnivorous mammal. It is often called the housecat when kept as an indoor pet,[6] or simply the cat when there is no need to distinguish it from other felids and felines. Cats are often valued by humans for companionship, and their ability to hunt vermin and household pests.</p>
 			<p>Cats are similar in anatomy to the other felids, with strong, flexible bodies, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey. Cat senses fit a crepuscular and predatory ecological niche. Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. They can see in near darkness. Like most other mammals, cats have poorer color vision and a better sense of smell than humans.</p>
-			<img src='http://upload.wikimedia.org/wikipedia/commons/9/93/Cat_poster_2.jpg' width="400" alt=""/>
+			<img class="Image" src='http://upload.wikimedia.org/wikipedia/commons/9/93/Cat_poster_2.jpg' width="400" alt=""/>
 			<p>Despite being solitary hunters, cats are a social species, and cat communication includes the use of a variety of vocalizations (mewing, purring, trilling, hissing, growling, and grunting), as well as cat pheromones, and types of cat-specific body language.[7]</p>
 			<p>Cats have a high breeding rate. Under controlled breeding, they can be bred and shown as registered pedigree pets, a hobby known as cat fancy. Failure to control the breeding of pet cats by neutering, and the abandonment of former household pets, has resulted in large numbers of feral cats worldwide, requiring population control.[8]</p><p>Since cats were cult animals in ancient Egypt, they were commonly believed to have been domesticated there,[9] but there may have been instances of domestication as early as the Neolithic from around 9500 years ago (7500 BC).[10] A genetic study in 2007 concluded that domestic cats are descended from African wildcats (Felis silvestris lybica), having diverged around 8000 BC in West Asia.[9][11] Cats are the most popular pet in the world, and are now found in almost every place where humans live.[12]</p>
 			<p>Nomenclature and etymology</p>
 			<p>The English word 'cat' (Old English catt) is in origin a loanword, introduced to many languages of Europe from Latin cattus[14] and Byzantine Greek κάττα, including Portuguese and Spanish gato, French chat, German Katze, Lithuanian katė and Old Church Slavonic kotka, among others.[15] The ultimate source of the word is Afroasiatic, presumably from Late Egyptian čaute,[16] the feminine of čaus "wildcat". The word was introduced, together with the domestic animal itself, to the Roman Republic by the first century BC.[citation needed] An alternative word with cognates in many languages is English 'puss' ('pussycat'). Attested only from the 16th century, it may have been introduced from Dutch poes or from Low German puuskatte, related to Swedish kattepus, or Norwegian pus, pusekatt. Similar forms exist in Lithuanian puižė and Irish puisín. The etymology of this word is unknown, but it may have simply arisen from a sound used to attract a cat.[17][18]</p>
 		</article>
 	</section>
-	<div>
-		<h2><a name="faq">FAQ</a></h2>
-	   	<dl>
+	<div id="abc" class="Big">
+		<h2><a name="faq"></a>FAQ</h2>
+	   	<dl >
 	   	    <dt>Is There an Easy Way to Bring My Cat to the Vet?</dt>
 		   	    <dd>If you have a indoor cat we recommend the 3-way vaccine which includes feline rhinotracheitis-calici-panleukopenia viruses (FRCP). If you have an outdoor cat or one who comes in and out, we recommend the FRCP, Feline Leukemia, & Rabies vaccines. Outdoor cats run the risk of coming in contact with these diseases when they mingle with other cats or animals.</dd>
 			<dt>What vaccines does my cat need?</dt>
@@ -44,36 +42,37 @@
 		   	    <dd>The surgery can be performed anytime over the age of 8 weeks, but we generally recommend waiting until four to six months of age. Cats usually do not reach puberty before 6 months.</dd>
 	    </dl>	
 	</div>
-		<h2><a name="contacts">Contacts</a></h2>
+	<div class="Cont">
+		<h2><a name="contacts"></a>Contacts</h2>
 		Adress: 2467 N.Tustin St. Orange, CA 50000
 		<br/>&#9742; 500-000-0000
 		<br/>&#9993; cat@cat.com
-	<div>
-		<h2><a name="register">Register</a></h2>
-		<form>
-			E-mail:<input type="text" name="email" />
-			<br />Password: <input type="password" name="password" />
-			<br />Password confirmation: <input type="password" name="password_confirmation" /><br /><input type="submit" value="Register"/>
-		</form>
 	</div>
+	<div></div>
+	<fieldset class="Form">
+		<legend><a name="register"></a>Register</legend>
+		<form>
+			<div>E-mail:<input type="text" name="email" /></div>
+			<div>Password: <input type="password" name="password"></div>
+			<div>Password confirmation: <input type="password" name="password_confirmation" /></div>
+			<div><input type="submit" value="Register"/></div>
+		</form>
+	</fieldset>
 	<br />
-	
-		<h2>Feedback</h2>
+	<fieldset class="Form">
+		<legend>Feedback</legend>
 	    <form>
-	      E-mail: <input type="text" name="email" />
-	      <br /><textarea name="comment" rows="10" cols="50"></textarea>
-	      <br /><input type="submit" value="Send"/>
+	      <div>E-mail: <input type="text" name="email" /></div>
+	      <div><textarea name="comment" rows="10" cols="50"></textarea></div>
+	      <div style="clear: both"><input type="submit" value="Send"/></div>
 	    </form>
-	
-	 <footer>       
-         <p>
-          	<a href="#about">About</a>
+	</fieldset>
+	  <footer>       
+      <a href="#about">About</a>
 			<a href="#faq">FAQ</a>
 			<a href="#contacts">Contacts</a>
 			<a href="#register">Register</a> 
-         </p>
-
          <p>&copy; 2014 <a href="https://github.com/LoVka">LoVka</a></p>
-      </footer>
+    </footer>
 </body>
 </html>
